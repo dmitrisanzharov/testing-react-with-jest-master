@@ -1,4 +1,6 @@
 import React from "react";
+
+
 const Name= () => {
   const [name, setName] = React.useState("");
 

@@ -2,5 +2,8 @@
 
 original is here: https://github.com/jackfranklin/testing-react-with-jest
 
-Note: I need to run NPM RUN WATCH, when large changes are made... because BUNDLE.js controls what is displayed in HTML
+Note: 
+
+> I need to run NPM RUN WATCH AND NPM START, if you want live updates... because BUNDLE compiles and then Live Server displays it
+> Without NPM RUN WATCH it will NOT work
  

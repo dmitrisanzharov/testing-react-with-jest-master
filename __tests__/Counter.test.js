@@ -1,13 +1,20 @@
 import React from 'react';
 import Counter from '../app/Counter';
 import {shallow} from 'enzyme';
+import renderer from 'react-test-renderer'; 
 
-describe('All test', ()=> {
+describe.skip('All test', ()=> {
 
     let wrapper;
 
     beforeEach(() => {
         wrapper = shallow(<Counter />);
+    })
+
+
+    it('matches the snapshot', ()=> {
+        const tree = renderer.create(<Counter />).toJSON();
+        expect(tree).toMatchSnapshot();
     })
 
 

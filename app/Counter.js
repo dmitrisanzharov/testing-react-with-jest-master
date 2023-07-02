@@ -4,13 +4,19 @@ const Counter = () => {
 
     const [count, setCount] = React.useState(0)
 
-    const incrementFunction = () => {
-        setCount(count + 1)
+
+    function makeIncrementer (amount) {
+      setCount(count + amount)
     }
 
-    const decrementFunction = () => {
-        setCount(count - 1)
+    function incrementFunction(){
+      makeIncrementer(1);
     }
+
+    function decrementFunction(){
+      makeIncrementer(-1)
+    }
+
 
 
   return (

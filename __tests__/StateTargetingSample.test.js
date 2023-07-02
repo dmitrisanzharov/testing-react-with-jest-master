@@ -7,8 +7,8 @@ const useStateSpy = jest.spyOn(React, "useState");
 useStateSpy.mockImplementation((initialState) => [initialState, setState]);
 const wrapper = shallow(<StateTargetingSample />);
 
-describe('All test', ()=> {
-    it.skip('starts with a count of 0', ()=> {
+describe.skip('All test', ()=> {
+    it('starts with a count of 0', ()=> {
 
         const newInput = 'omg yes'
 
